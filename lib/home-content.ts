@@ -159,20 +159,64 @@ export const closing = {
 export const testimonials = [
   {
     id: "fg",
+    name: "F.G.",
     initial: "FG",
+    subtitle: "Young professional, Amsterdam",
     quote:
       "Ik zat vast in mijn werk, maar heb dankzij het traject weer energie en richting. Ewout stelt vragen die je echt laten nadenken.",
   },
   {
     id: "ak",
+    name: "A.K.",
     initial: "AK",
     quote:
       "De coaching hielp mij uit mijn hoofd en meer in mijn gevoel te komen.",
   },
   {
     id: "lp",
+    name: "L.P.",
     initial: "LP",
+    subtitle: "Product manager, Utrecht",
     quote:
       "Ik heb geleerd mijn eigen belangen duidelijker te bewaken in samenwerking. Het traject gaf me concrete inzichten die ik direct op werk kon toepassen.",
+  },
+  {
+    id: "mr",
+    name: "M.R.",
+    initial: "MR",
+    subtitle: "Consultant, Rotterdam",
+    quote:
+      "Voor het traject bleef ik twijfelen en stelde ik keuzes uit. Nu durf ik kleine stappen te zetten die echt bij mij passen.",
+  },
+  {
+    id: "sv",
+    name: "S.V.",
+    initial: "SV",
+    subtitle: "Team lead, Den Haag",
+    quote:
+      "De sessies gaven me rust en helderheid. Ik maak beslissingen nu sneller, zonder telkens bevestiging van anderen te zoeken.",
+  },
+  {
+    id: "jn",
+    name: "J.N.",
+    initial: "JN",
+    quote:
+      "Wat ik sterk vond: geen trucjes, maar echte verdieping. Ik snap beter waar mijn energie vandaan komt en waar die weglekt.",
+  },
+  {
+    id: "td",
+    name: "T.D.",
+    initial: "TD",
+    subtitle: "HR specialist, Eindhoven",
+    quote:
+      "Ik had het gevoel dat ik vastzat tussen veilige opties. Door dit traject kon ik eindelijk kiezen met vertrouwen.",
+  },
+  {
+    id: "pk",
+    name: "P.K.",
+    initial: "PK",
+    subtitle: "Data analyst, Groningen",
+    quote:
+      "Ewout hielp me mijn eigen kompas terug te vinden. Ik ben minder in mijn hoofd en meer in actie, met veel meer focus.",
   },
 ] as const;

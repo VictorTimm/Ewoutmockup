@@ -8,6 +8,7 @@ const STYLES = [
   { v: "3", label: "Style 3 · Landing" },
   { v: "4", label: "Style 4 · Warm" },
   { v: "5", label: "Style 5 · Story" },
+  { v: "6", label: "Style 6 · Premium Story" },
 ] as const;
 
 export function StyleSwitcher() {

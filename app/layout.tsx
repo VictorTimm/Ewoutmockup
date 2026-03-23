@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { StyleSwitcher } from "@/components/StyleSwitcher";
 
@@ -11,6 +12,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
   subsets: ["latin"],
 });
 
@@ -28,13 +34,13 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
       >
         <header className="sticky top-0 z-50 border-b border-[#4a7ba7]/15 bg-white/90 backdrop-blur-md shadow-sm py-3.5 px-4 md:px-6">
           <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
-            <a href="/" className="font-semibold text-[#1f3a5f]">
+            <Link href="/" className="font-semibold text-[#1f3a5f]">
               True North
-            </a>
+            </Link>
             <Suspense fallback={<span className="text-sm text-[#1f3a5f]/50">Variant: …</span>}>
               <StyleSwitcher />
             </Suspense>
