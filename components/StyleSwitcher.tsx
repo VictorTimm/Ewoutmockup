@@ -9,6 +9,7 @@ const STYLES = [
   { v: "4", label: "Style 4 · Warm" },
   { v: "5", label: "Style 5 · Story" },
   { v: "5.1", label: "Style 5.1 · Story (sandbox)" },
+  { v: "5.2", label: "Style 5.2 · Story (sandbox)" },
   { v: "6", label: "Style 6 · Premium Story" },
 ] as const;
 
