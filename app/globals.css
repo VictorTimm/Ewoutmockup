@@ -31,6 +31,25 @@ body {
   font-family: var(--font-playfair-display), Georgia, serif;
 }
 
+.story51-canvas {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 0%, color-mix(in oklab, var(--calm-blue) 14%, transparent), transparent 60%),
+    linear-gradient(180deg, #eef3f8 0%, var(--background) 40%, #f0f4f9 100%);
+}
+
+.story51-elevated {
+  background: color-mix(in oklab, white 88%, var(--calm-blue) 12%);
+  border: 1px solid color-mix(in oklab, var(--calm-blue) 14%, transparent);
+  box-shadow:
+    0 20px 48px -36px color-mix(in oklab, var(--primary-blue) 38%, transparent),
+    inset 0 1px 0 color-mix(in oklab, white 80%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.story51-divider {
+  border-top: 1px solid color-mix(in oklab, var(--primary-blue) 12%, transparent);
+}
+
 .premium-page {
   background:
     radial-gradient(circle at top, color-mix(in oklab, #d8c6ae 28%, transparent), transparent 44%),
@@ -207,11 +226,14 @@ button:focus-visible {
 .testimonial-track-group {
   flex-shrink: 0;
   gap: 1.5rem;
+  /* Space between last card of group A and first card of group B; same on both groups so marquee -50% stays seamless */
+  padding-inline-end: 1.5rem;
 }
 
 @media (min-width: 48rem) {
   .testimonial-track-group {
     gap: 2rem;
+    padding-inline-end: 2rem;
   }
 }
 

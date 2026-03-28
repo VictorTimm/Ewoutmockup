@@ -276,9 +276,11 @@ export function HomeStyle5() {
         <div className={container}>
           <p className={`${eyebrow} micro-underline inline-block`}>Ervaringen</p>
           <h2 className={`${h2} mb-12`}>Wat anderen zeggen</h2>
+        </div>
+        <div className="relative left-1/2 w-screen max-w-[100vw] -translate-x-1/2 overflow-x-hidden">
           <div className="testimonial-carousel relative overflow-x-hidden overflow-y-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 md:w-20 bg-gradient-to-r from-[color:color-mix(in_oklab,var(--color-calm-blue)_6%,white)] to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 md:w-20 bg-gradient-to-l from-[color:color-mix(in_oklab,var(--color-calm-blue)_6%,white)] to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 md:w-28 lg:w-32 bg-gradient-to-r from-[color:color-mix(in_oklab,var(--color-calm-blue)_6%,white)] from-50% to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 md:w-28 lg:w-32 bg-gradient-to-l from-[color:color-mix(in_oklab,var(--color-calm-blue)_6%,white)] from-50% to-transparent" />
             <div className="testimonial-track flex flex-row flex-nowrap items-stretch">
               <div className="testimonial-track-group flex flex-row flex-nowrap items-stretch">
                 {testimonials.map((t) => (

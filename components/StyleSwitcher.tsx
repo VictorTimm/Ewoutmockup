@@ -8,6 +8,7 @@ const STYLES = [
   { v: "3", label: "Style 3 · Landing" },
   { v: "4", label: "Style 4 · Warm" },
   { v: "5", label: "Style 5 · Story" },
+  { v: "5.1", label: "Style 5.1 · Story (sandbox)" },
   { v: "6", label: "Style 6 · Premium Story" },
 ] as const;
 
@@ -22,7 +23,7 @@ export function StyleSwitcher() {
       {STYLES.map(({ v, label }) => (
         <button
           key={v}
-          onClick={() => router.push(`/?v=${v}`)}
+          onClick={() => router.push(`/?v=${encodeURIComponent(v)}`)}
           className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
             current === v
               ? "bg-[#1f3a5f] text-white"

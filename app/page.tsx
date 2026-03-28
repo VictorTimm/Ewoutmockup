@@ -3,6 +3,7 @@ import { HomeStyle2 } from "@/components/home/HomeStyle2";
 import { HomeStyle3 } from "@/components/home/HomeStyle3";
 import { HomeStyle4 } from "@/components/home/HomeStyle4";
 import { HomeStyle5 } from "@/components/home/HomeStyle5";
+import { HomeStyle51 } from "@/components/home/HomeStyle51";
 import { HomeStyle6 } from "@/components/home/HomeStyle6";
 
 const STYLES = {
@@ -11,6 +12,7 @@ const STYLES = {
   "3": HomeStyle3,
   "4": HomeStyle4,
   "5": HomeStyle5,
+  "5.1": HomeStyle51,
   "6": HomeStyle6,
 } as const;
 
